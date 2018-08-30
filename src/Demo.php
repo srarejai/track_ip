@@ -7,7 +7,7 @@ namespace track_ip\Demo;
 class Demo
 {
 
-    public function __construct($)
+    public function __construct()
     {
 
     }
