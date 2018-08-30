@@ -7,7 +7,7 @@ use track_ip\Demo\Demo;
 2. In composer.json include following line
 
 "require": {
-     "vanilla_geocode_ip/Demo": "dev-master"
+     "track_ip/Demo": "dev-master"
 }
 
 3. Execute
