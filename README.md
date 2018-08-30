@@ -27,7 +27,7 @@ track_ip\Demo\DemoServiceProvider::class
 $ip = $_SERVER['REMOTE_ADDR'];
 $geo = new Demo();
 $geovalues = $geo->getGeoLocation($ip);
-if($geovalues)
+if(!$geovalues)
 {
   /* Invalid IP sent */
 }
