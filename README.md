@@ -14,13 +14,11 @@ use track_ip\Demo\Demo;
 
 composer update
 
-4. 
-
-Add following line to providers array in app.php
+4. Add following line to providers array in app.php
 
 track_ip\Demo\DemoServiceProvider::class
 
-Add following line to aliases array
+5. Add following line to aliases array
 
 'track_ip' => track_ip\Demo\Demo::class
 
@@ -29,7 +27,7 @@ Add following line to aliases array
 $ip = $_SERVER['REMOTE_ADDR'];
 $geo = new Demo();
 $geovalues = $geo->getGeoLocation($ip);
-
-
-
-
+if($geovalues)
+{
+  /* Invalid IP sent */
+}
