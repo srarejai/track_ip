@@ -1,11 +1,11 @@
 {
-    "name": "track_ip/demo",
+    "name": "vanilla_geocode_ip/demo",
     "description": "Demo package for tracking and geocoding ip addresses.",
     "keywords": ["laravel", "demo"],
     "license": "MIT",
     "authors": [
         {
-            "name": "track_ip",
+            "name": "Vanilla",
             "email": "s.jayakumar@vanillanetworks.com"
         }
     ],
@@ -15,7 +15,7 @@
         }
     },
     "require": {
-        "php": "7.1.8",
+        "php": ">5.0",
         "illuminate/support": "~5"
     }
 }
