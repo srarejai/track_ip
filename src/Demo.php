@@ -53,7 +53,7 @@ class Demo
           $result = [];
           $result['statusCode'] = '102';
           $result['statusMessage'] = 'Invalid Ip Format';
-          return jscon_encode($result);
+          return json_encode($result);
         }
     }
 }
