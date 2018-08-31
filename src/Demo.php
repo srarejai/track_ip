@@ -11,6 +11,18 @@ class Demo
 
     public function getGeoLocation($ip, $apikey, $format)
     {
+
+        /**** Check Number Of Arguments Passed ****/
+
+        $numargs = func_num_args();
+
+        if ($numargs !== 3) {
+          $result = [];
+          $result['Error'] = '100';
+          $result['Description'] = 'Invalid Number Of Arguments Passed';
+          return jscon_encode($result);
+        }
+
         /**** Check format requested ****/
 
         if($format !== 'raw' && $format !== 'xml' && $format !== 'json')
