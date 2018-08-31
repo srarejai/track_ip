@@ -30,7 +30,8 @@ track_ip\Demo\DemoServiceProvider::class
 
 $ip = $_SERVER['REMOTE_ADDR'];
 $geo = new Demo();
-$geovalues = $geo->getGeoLocation($ip, "YOUR API KEY");
+$format = "json"; // can be raw, xml or json
+$geovalues = $geo->getGeoLocation($ip, "YOUR IPINFODB API KEY", $format);
 
 8. Results
 
