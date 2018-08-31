@@ -18,8 +18,8 @@ class Demo
 
         if ($numargs !== 3) {
           $result = [];
-          $result['Error'] = '100';
-          $result['Description'] = 'Invalid Number Of Arguments Passed';
+          $result['statusCode'] = '100';
+          $result['statusMessage'] = 'Error: Invalid Number Of Arguments Passed';
           return jscon_encode($result);
         }
 
@@ -28,8 +28,8 @@ class Demo
         if($format !== 'raw' && $format !== 'xml' && $format !== 'json')
         {
            $result = [];
-           $result['Error'] = '101';
-           $result['Description'] = 'Invalid Result Format Requested';
+           $result['statusCode'] = '101';
+           $result['statusMessage'] = 'Invalid Result Format Requested';
            return jscon_encode($result);
         }
 
@@ -51,8 +51,8 @@ class Demo
 	      }
         else {
           $result = [];
-          $result['Error'] = '102';
-          $result['Description'] = 'Invalid Ip Format';
+          $result['statusCode'] = '102';
+          $result['statusMessage'] = 'Invalid Ip Format';
           return jscon_encode($result);
         }
     }
